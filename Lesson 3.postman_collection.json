@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "6bcca21e-3123-49dd-aaef-8445971aca78",
+		"name": "Lesson 3",
+		"description": "Novoe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36362433"
+	},
+	"item": [
+		{
+			"name": "XepHu",
+			"item": []
+		},
+		{
+			"name": "Test pet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/:id",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{pet_id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
